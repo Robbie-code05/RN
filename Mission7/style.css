@@ -1,0 +1,127 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aquamarine;
+}
+
+.premier {
+    color: aqua;
+   border: 2px solid black;
+    height: 150px;
+    width: 90vh;
+    margin-top: 20px;
+    border-radius: 13px;
+    margin-left: 27px;
+}
+
+.cv {
+    background-color: white;
+    height: 1000px;
+    width: 550px;
+    display: flex;
+    margin-left: 26%;
+    border: 2px solid black;
+    border-radius: 12px;
+    flex-direction: column;
+    
+}
+
+.c1{
+    background: white;
+    height: 150px;
+    width: 200px;
+    float: left;
+    margin-left: 2vh;
+    color: black;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.c2{
+    float: right;
+  margin-right: 10px;
+  
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 13px;
+}
+
+.h11{
+    font-size: 20px;
+    margin-left: 37px;
+}
+
+
+
+.deuxième {
+    margin-left: 27px;
+    border: 2px solid black;
+     height: 190px;
+     width: 90vh;
+     border-radius: 13px;
+     margin-top: 20px;
+}
+
+.année {
+
+    width: 120px;
+    margin-left: 30px;
+    height: 120px;
+    font-size: 15px;
+    
+ 
+}
+
+.formations {
+    
+    width: 80vh;
+    height: 120px;
+    position: relative;
+    left: 155px;
+    bottom: 140px;
+    
+}
+
+.troisième {
+    
+    border: 2px solid black;
+     height: 150px;
+     width: 90vh;
+     border-radius: 13px;
+    margin-bottom: 200px;
+    position: relative;
+    bottom: 90px;
+
+}
+
+.effacer {
+    opacity: 0;
+}
+
+.quatrième {
+    border: 2px solid black;
+    height: 170px;
+    width: 90vh;
+    border-radius: 13px;
+   margin-bottom: 200px;
+   position: relative;
+   bottom: 140px;
+}
+
+.cinquième {
+    border: 2px solid black;
+    height: 170px;
+    width: 90vh;
+    border-radius: 13px;
+    margin-left: 30px;
+    position: relative;
+    top:395px;
+}
+
+
+

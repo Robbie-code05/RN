@@ -1,0 +1,32 @@
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Style des en-têtes */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Style des cellules */
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Style des lignes */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur pour les lignes paires */
+}
+
+/* Style au survol */
+tr:hover {
+    background-color: #ddd;
+}

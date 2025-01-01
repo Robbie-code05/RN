@@ -1,0 +1,84 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5865f2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: animation 1s forwards;
+}
+
+
+button:hover {
+    background-color: #4752c4;
+    transform: translateY(-3px);
+}
+
+
+button:active {
+    background-color: #3a46a8;
+    transform: translateY(0);
+}
+
+/* Styles spécifiques pour chaque bouton */
+.un {
+    background-color: #ff4757;
+}
+
+.un:hover {
+    background-color: grey;
+}
+
+.deux {
+    background-color: #1abc9c;
+}
+
+.deux:hover {
+    background-color: grey;
+}
+
+.trois {
+    background-color: #f39c12;
+}
+
+.trois:hover {
+    background-color: grey;
+}
+
+.quatre {
+    background-color: #9b59b6;
+}
+
+.quatre:hover {
+    background-color: grey;
+}
+
+@keyframes animation {
+    0%{
+        opacity: 0;
+        margin-top: 100%;
+    }
+
+
+
+    100%{
+        opacity: 1;
+        margin-top:1%;
+    }
+}
