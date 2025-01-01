@@ -13,8 +13,7 @@ body {
     background-image: url(starfall-night-sky-mountains-aesthetic-gif-desktop-wallpaper.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    font-size: 15px;
 
 }
 
@@ -43,7 +42,8 @@ body {
 
 .premier:hover {
     background-color: grey;
-     transform: scale(1.09);
+    transform: scale(1.09);
+
 }
 
 .deuxieme {
@@ -57,12 +57,11 @@ body {
     color: black;
     animation: opacite 1.9s ease-in-out forwards;
     box-shadow: 10px 10px 5px black;
-    font-size:15px;
 }
 
 .deuxieme:hover {
     background-color: grey;
-     transform: scale(1.09);
+    transform: scale(1.09);
 }
 
 .troisieme {
@@ -77,12 +76,11 @@ body {
     color: black;
     animation: opacite 1.9s ease-in-out forwards;
     box-shadow: 10px 10px 5px black;
-    font-size:15px;
 }
 
 .troisieme:hover {
     background-color: grey;
-     transform: scale(1.09);
+    transform: scale(1.09);
 }
 
 
