@@ -43,6 +43,7 @@ body {
 
 .premier:hover {
     background-color: grey;
+    transform: scale(1.07);
 }
 
 .deuxieme {
