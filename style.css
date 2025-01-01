@@ -43,7 +43,7 @@ body {
 
 .premier:hover {
     background-color: grey;
-    transform: scale(1.07);
+     transform: scale(1.09);
 }
 
 .deuxieme {
@@ -62,6 +62,7 @@ body {
 
 .deuxieme:hover {
     background-color: grey;
+     transform: scale(1.09);
 }
 
 .troisieme {
@@ -81,6 +82,7 @@ body {
 
 .troisieme:hover {
     background-color: grey;
+     transform: scale(1.09);
 }
 
 
