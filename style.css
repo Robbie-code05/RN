@@ -1,0 +1,181 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(starfall-night-sky-mountains-aesthetic-gif-desktop-wallpaper.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+
+}
+
+.navbarre {
+    background-color: transparent;
+    height: 50px;
+    margin-bottom: 20px;
+    color: black;
+    justify-content: space-around;
+    display: flex;
+    padding-left: 30px;
+}
+
+.premier {
+    background-color: rgb(149, 218, 216);
+    border-radius: 10px;
+    width: 130px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 7px;
+    padding-top: 9px;
+    color: black;
+    animation: descendre 1.7s ease-in-out forwards;
+    box-shadow: 10px 10px 5px black;
+}
+
+.premier:hover {
+    background-color: grey;
+}
+
+.deuxieme {
+    background-color: rgb(149, 218, 216);
+    border-radius: 10px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 7px;
+    padding-top: 9px;
+    color: black;
+    animation: opacite 1.9s ease-in-out forwards;
+    box-shadow: 10px 10px 5px black;
+}
+
+.deuxieme:hover {
+    background-color: grey;
+}
+
+.troisieme {
+    background-color: rgb(149, 218, 216);
+    border-radius: 10px;
+    width: 220px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 7px;
+    padding-top: 9px;
+    padding-left: 2px;
+    color: black;
+    animation: opacite 1.9s ease-in-out forwards;
+    box-shadow: 10px 10px 5px black;
+}
+
+.troisieme:hover {
+    background-color: grey;
+}
+
+
+@keyframes descendre {
+
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+    }
+
+
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+    }
+
+}
+
+@keyframes opacite {
+
+    0% {
+        opacity: 0;
+
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+header {
+    margin: 20px 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+.exercice {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.exercice:hover {
+    text-decoration: none;
+    color: mediumblue;
+}
+
+.Titre {
+    font-size: 75px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+    animation: couleur 7.5s ease-in-out infinite;
+    background-image: linear-gradient(to right, black, blue, mediumblue, cyan, purple, pink, white);
+    margin-bottom: 20px;
+}
+
+@keyframes couleur {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+        /* Déplacer le dégradé */
+    }
+}
+
+
+
+
+footer {
+    margin: 20px 0;
+}
+
+.exerciceTP {
+    color: white;
+    text-decoration: none;
+
+}
+
+.exerciceTP:hover {
+    color: mediumblue;
+}

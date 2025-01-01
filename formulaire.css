@@ -1,0 +1,50 @@
+ body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('snowy-mountain-peak-starry-galaxy-majesty-generative-ai.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    height: 100vh; 
+}
+
+.titre{
+    color:black!important;
+}
+
+.titre, .lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row; /* Si tu veux que les éléments soient empilés verticalement */
+    color: black;
+    animation: Test 2s forwards;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.lien:hover{
+    color:#007BFF;
+}
+
+@keyframes Test {
+    0%{
+        opacity: 0;
+        margin-top: 100%;
+    }
+
+
+
+    100%{
+        opacity: 1;
+        margin-top:0%;
+    }
+}
