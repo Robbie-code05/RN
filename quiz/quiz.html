@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: black;
+        }
+
+        .quiz-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 9px dotted #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, .1);
+            background-color: white;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h2>Quiz Rapide</h2>
+        <form id="quizForm">
+            <p>1. Quelle balise HTML est utilisée pour créer un lien hypertexte ?</p>
+            <input type="radio" name="q1" value="a"> a <br>
+            <input type="radio" name="q1" value="link"> link <br>
+            <input type="radio" name="q1" value="href"> href <br>
+
+            <p>2. Quel attribut HTML est utilisé pour spécifier une image de remplacement si l'image principale ne peut
+                pas être affichée ?</p>
+            <input type="radio" name="q2" value="alt"> alt <br>
+            <input type="radio" name="q2" value="src"> src<br>
+            <input type="radio" name="q2" value="title"> title<br>
+
+            <p>3. Quelle propriété CSS permet de changer la couleur du texte ?</p>
+            <input type="radio" name="q3" value="color"> color<br>
+            <input type="radio" name="q3" value="text-color"> text-color <br>
+            <input type="radio" name="q3" value="font-color"> font-color<br>
+
+            <p>4. Quelle est la bonne syntaxe pour déclarer une variable en JavaScript ?</p>
+            <input type="radio" name="q4" value="var x = 5;"> var x = 5;<br>
+            <input type="radio" name="q4" value="let x = 5;"> let x = 5;<br>
+            <input type="radio" name="q4" value="const x = 5;"> const x = 5;<br>
+
+            <p>5. Quelle méthode JavaScript permet d'ajouter un élément HTML dans le DOM ?</p>
+            <input type="radio" name="q5" value="document.createElement()"> document.createElement() <br>
+            <input type="radio" name="q5" value="document.appendChild()"> document.appendChild()<br>
+            <input type="radio" name="q5" value="document.innerHTML()"> document.innerHTML()<br>
+
+            <p>6. Quel événement JavaScript est déclenché lorsqu'un utilisateur clique sur un élément ?</p>
+            <input type="radio" name="q6" value="onhover"> onhover<br>
+            <input type="radio" name="q6" value="onclick"> onclick<br>
+            <input type="radio" name="q6" value="onpress"> onpress<br>
+
+            <p>7. Quel type de positionnement CSS positionne un élément relativement à sa position normale ?</p>
+            <input type="radio" name="q7" value="relative"> relative<br>
+            <input type="radio" name="q7" value="absolute"> absolute<br>
+            <input type="radio" name="q7" value="fixed"> fixed <br>
+
+            <p>8. Quel sélecteur CSS cible tous les éléments d'un document ?</p>
+            <input type="radio" name="q8" value="*"> * <br>
+            <input type="radio" name="q8" value="."> .<br>
+            <input type="radio" name="q8" value="#"> #<br>
+
+            <button type="button" onclick="verifierReponses()">Valider</button>
+        </form>
+        <h3 id="resultat"></h3>
+    </div>
+
+    <script>
+        function verifierReponses() {
+            let score = 0;
+            let reponses = {
+                q1: "a",
+                q2: "alt",
+                q3: "color",
+                q4: "let x = 5;",
+                q5: "document.createElement()",
+                q6: "onclick",
+                q7: "relative",
+                q8: "*"
+            };
+
+            let form = document.getElementById("quizForm");
+            let reponsesUtilisateur = {};
+
+            let resultatTexte = "Votre score : ";
+
+            for (let question in reponses) {
+                reponsesUtilisateur[question] = form[question].value;
+                if (reponsesUtilisateur[question] === reponses[question]) {
+                    score++;
+                }
+            }
+
+            resultatTexte += `${score}/8\nLes bonnes réponses étaient :\n`;
+            for (let question in reponses) {
+                resultatTexte += `${question} : ${reponses[question]}\n`;
+            }
+
+            document.getElementById("resultat").innerText = resultatTexte;
+        }
+    </script>
+</body>
+
+</html>

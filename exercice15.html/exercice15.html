@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices Disponibles</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Conteneur principal */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Titre principal */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Exercices */
+        .exercise {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Effet au survol */
+        .exercise:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Titres des exercices */
+        .exercise h2 {
+            margin: 0 0 10px;
+            color: #1976d2;
+        }
+
+        /* Texte de description */
+        .exercise p {
+            color: #555;
+        }
+
+        /* Boutons */
+        button {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        /* Effet au survol des boutons */
+        button:hover {
+            background: #1565c0;
+        }
+    </style>
+    <div class="container">
+        <h1>Exercices Disponibles</h1>
+
+        <div class="exercise">
+            <h2>1. Afficher un message</h2>
+            <p>Affiche un message</p>
+            <button onclick="voirs1()">Voir la solution</button>
+            <button onclick="afficher_message()">Voir la démonstration</button>
+            <p id="output1"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>2. Addition</h2>
+            <p>Additionne deux nombres</p>
+            <button onclick="voirs2()">Voir la solution</button>
+            <button onclick="addition()">Voir la démonstration</button>
+            <p id="output2"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>3. Pair ou Impair</h2>
+            <p id="output2">Affiche si le nombre est pair ou impair.</p>
+            <button onclick="voirs3()">Voir la solution</button>
+            <button onclick="odd_even()">Voir la démonstration</button>
+            <p id="output3"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>4. Multiplier</h2>
+            <p id="output3">multiplication</p>
+            <button onclick="voirs4()">Voir la solution</button>
+            <button onclick="multiplier()">Voir la démonstration</button>
+            <p id="output4"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>5. Nombre au carré</h2>
+            <p id="output4">Affiche le carré d'un nombre.</p>
+            <button onclick="voirs5()">Voir la solution</button>
+            <button onclick="nombrecarre()">Voir la démonstration</button>
+            <p id="output5"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution" ()>
+            <h2>6. Positif ou négatif</h2>
+            <p id="output5">Affiche si un nombre est positif ou négatif</p>
+            <button onclick="voirs6()">Voir la solution</button>
+            <button onclick="positive_negative()" positive_negative()>Voir la démonstration</button>
+            <p id="output6"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution" ()>
+            <h2>7. Afficher la Date</h2>
+            <p id="output6">Affiche la date.</p>
+            <button onclick="voirs7()">Voir la solution</button>
+            <button onclick=" afficher_date()">Voir la démonstration</button>
+            <p id="output7"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution" ()>
+            <h2>8. Convertir les celsius en Fahrenheit</h2>
+            <p id="output7">Convertir les celsius en Fahrenheit</p>
+            <button onclick="voirs8()">Voir la solution</button>
+            <button onclick="celsius_to()">Voir la démonstration</button>
+            <p id="output8"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>9. Calculer l'aire d'un cercle</h2>
+            <p id="output8">Aire d'un cercle</p>
+            <button onclick="voirs9()">Voir la solution</button>
+            <button onclick="calcul_aireCercle()">Voir la démonstration</button>
+            <p id="output9"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution()">
+            <h2>10. Afficher la table de multiplication d'un nombre</h2>
+            <p id="output9">Affiche la table de multiplication d'un nombre</p>
+            <button onclick="voirs10()">Voir la solution</button>
+            <button onclick="table_multiplication()">Voir la démonstration</button>
+            <p id="output10"></p>
+            <p id="output11"></p>
+            <p id="output12"></p>
+            <p id="output13"></p>
+            <p id="output14"></p>
+            <p id="output15"></p>
+            <p id="output16"></p>
+            <p id="output17"></p>
+            <p id="output18"></p>
+            <p id="output19"></p>
+            <p id="output20"></p>
+        </div>
+        <div class="exercise" onclick="afficherSolution" ()>
+            <h2>11. Montrer le nombre le plus grand</h2>
+            <p id="output10">Affiche le nombre le plus grand</p>
+            <button onclick="voirs11()">Voir la solution</button>
+            <button onclick="bigger_number()">Voir la démonstration</button>
+            <p id="output21"></p>
+        </div>
+
+        <div class="exercise">
+            <h2>12. Convertir les celsius en Kelvin</h2>
+            <p id="output11">Convertir les celsius en Kelvin</p>
+            <button onclick="voirs12()">Voir la solution</button>
+            <button onclick="celsius_toK()">Voir la démonstration</button>
+            <p id="output22"></p>
+        </div>
+
+        <div class="exercise">
+            <h2>13. vérifiere si un mot est un palindrome</h2>
+            <p id="output12">Écrire une fonction qui retourne le plus grand entre deux nombres.</p>
+            <button onclick="voirs13()">Voir la solution</button>
+            <button onclick="estPalindrome()">Voir la démonstration</button>
+            <p id="output23"></p>
+        </div>
+
+        <div class="exercise">
+            <h2>14. La somme des 100 premiers nombre</h2>
+            <p id="output13">Écrire une fonction qui retourne le plus grand entre deux nombres.</p>
+            <button onclick="voirs14()">Voir la solution</button>
+            <button onclick="somme100()">Voir la démonstration</button>
+            <p id="output24"></p>
+        </div>
+
+        <div class="exercise" onclick="" ()>
+            <h2>15. Trouver le mot le plus long</h2>
+            <p id="output14">Écrire une fonction qui retourne le plus grand entre deux nombres.</p>
+            <button onclick="voirs15()">Voir la solution</button>
+            <button onclick="motLePlusLong()">Voir la démonstration</button>
+            <p id="output25"></p>
+        </div>
+
+    </div>
+    <script src="exercice.js"></script>
+</body>
+
+</html>
